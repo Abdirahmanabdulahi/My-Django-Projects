@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Level Templates</title>
+    <style>
+        /* General body styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        /* Styling the header */
+        header {
+            background-color: #485d74; /* Blue background for the header */
+            padding: 20px 0; /* Add vertical padding */
+            text-align: center;
+            color: white;
+        }
+
+        /* Styling the unordered list */
+        header ul {
+            list-style-type: none; /* Remove default bullet points */
+            margin: 0;
+            padding: 0;
+            display: inline-flex; /* Align items horizontally */
+            gap: 20px; /* Space between items */
+        }
+
+        /* Styling list items */
+        header ul li {
+            padding: 10px 15px; /* Add padding around items */
+            background-color: #ffffff; /* White background for each item */
+            border-radius: 5px; /* Add rounded corners */
+            color: #007bff; /* Blue text color */
+            font-weight: bold; /* Bold text */
+            cursor: pointer; /* Change cursor on hover */
+            transition: background-color 0.3s, color 0.3s; /* Smooth hover effect */
+        }
+
+        /* Hover effect for list items */
+        header ul li:hover {
+            background-color: #0056b3; /* Darker blue background on hover */
+            color: #ffffff; /* White text color on hover */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <ul>
+            <a href="{% url 'Abouturlname' %}"><li>About Me</li> </a>
+            <a href="{% url 'homeurlname' %}"><li> Home</li></a>
+            <a href="{% url 'indexurlname' %}"><li> Index</li></a>
+            <li>City</li>
+            <li>School</li>
+        </ul>
+    </header>
+</body>
+</html>
+
+path('children/', views.children, name="childrenurlname"),
+
+<a href="{% url 'homeurlname' %}">Home</a>
+
+{% url 'tourismurlname' %}
